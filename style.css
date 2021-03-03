@@ -1,0 +1,21 @@
+body{
+    background-color: #f4f7fa;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    transform: translateY(50%);
+}
+.logo img{
+    width: 10%;
+    height: auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    margin-top: 80px;
+}
