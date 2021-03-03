@@ -1,6 +1,10 @@
 body{
     background-color: #f4f7fa;
 }
+button,li,ul{
+    text-decoration: none;
+    list-style: none;
+}
 .logo{
     display: flex;
     justify-content: center;
@@ -18,4 +22,8 @@ form{
     align-items: center;
     font-size: 0.8em;
     margin-top: 80px;
+}
+
+.dropdown-menu{
+    display: none;
 }
