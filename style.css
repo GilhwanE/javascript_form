@@ -14,6 +14,8 @@ body{
 li,ul{
     text-decoration: none;
     list-style: none;
+    padding-left: 0;
+    margin-left: 0;
 }
 
 button{
@@ -21,6 +23,7 @@ button{
     line-height: 1;
     letter-spacing: -0.02em;
     color: #3f4150;
+    border: none;
     background-color: #fff;
     cursor: pointer;
 }
@@ -74,20 +77,42 @@ form h1{
     line-height: 50px;
     border: 1px solid rgba(224, 226, 231, 0.75);
 }
+.dropdown-toggle.selected {
+     color: #3f4150;
+     border-color: rgba(224, 226, 31, 1);
+}
+.dropdown-toggle:active{
+    border-color: black;
+}
 
 .dropdown-menu{
-    display: none;
-}
-
-/*  */
-
-.next-button{
+    position: absolute;
+     z-index: 2;
+    top: 50px;
+    left: 0;
     width: 100%;
-    padding: 16px;
+    max-height: 0;
+    font-size: 14px;
+    overflow: hidden;
+    
+}
+.dropdown-option{
+    width: 100%;
+    height: 40px;
+    padding: 0 16px;
+    text-align: left;
+    line-height: 40px;
+}
+.next-button {
+    display: block;
+    width: 100%;
+    height: 44px;
     font-size: 16px;
     font-weight: 600;
-    border: all solid 5px;
-    border-radius: 4px;
-    border-color: brown;
-    background-color: burlywood;
-}
+    padding: 0 16px;
+    line-height: 40px;
+    color: #f8f9fa;
+    background-color: #1b1c32;
+    border-radius: 6px;
+    transition: background-color 150ms ease-in;
+  }
