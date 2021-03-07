@@ -5,6 +5,7 @@ const dropToggle = document.querySelector('.dropdown-toggle');
 const dropMenu = document.querySelector('.dropdown-menu');
 const dropItme = document.querySelector('.dropdown-item');
 const dropOptions = document.querySelectorAll('.dropdown-option');
+const nextBtn = document.querySelector('.next-button');
 
 dropToggle.addEventListener("click" , () => {
     dropMenu.classList.toggle('show');
@@ -22,6 +23,7 @@ dropOptions.forEach(function(item) {
     const value = e.currentTarget.textContent.trim();
     dropToggle.textContent = value;
     dropToggle.classList.add('selected');
-
+    // option값이 들어오면 next-btn 활성화 disabled 해제
+    nextBtn.removeAttribute('disabled');
 })
 });
