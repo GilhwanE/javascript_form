@@ -86,7 +86,7 @@ form h1{
      border-color: rgba(224, 226, 31, 1);
 }
 .dropdown-toggle:active{
-    border-color: black;
+    border-color: rgba(220, 210, 220, 0.5);
 }
 
 .dropdown-menu{
