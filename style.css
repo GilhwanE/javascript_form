@@ -85,10 +85,7 @@ form h1{
      color: #3f4150;
      border-color: rgba(224, 226, 31, 1);
 }
-.dropdown-toggle:active{
-    border-color: rgba(220, 210, 220, 0.5);
-}
-
+    
 .dropdown-menu{
     position: absolute;
      z-index: 2;
@@ -104,6 +101,7 @@ form h1{
 .dropdown-menu.show{
     padding: 2px 0;
     max-height: 280px;
+    background-color: #fff;
     border-color: rgba(224, 226, 231, 0.5);
     box-shadow: 0 4px 9px 0 rgba(63, 65, 80, 0.1);
 }
